@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteCard component should render properly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 10,
+        "elevation": 4,
+        "flex": 1,
+        "justifyContent": "center",
+        "margin": 10,
+      },
+      Object {
+        "backgroundColor": "#5d7a90",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderTopLeftRadius": 10,
+        "borderTopRightRadius": 10,
+        "elevation": 2,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 50,
+        "justifyContent": "center",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#517fa4",
+            "fontSize": 25,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Note Title
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "width": 60,
+        }
+      }
+    >
+      <Icon
+        color="#517fa4"
+        name="edit"
+        onPress={[MockFunction]}
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        type="materialicon"
+        underlayColor="white"
+      />
+      <Icon
+        color="#517fa4"
+        name="delete"
+        onPress={[MockFunction]}
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        type="materialicon"
+        underlayColor="white"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "minHeight": 50,
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#212121",
+          "fontSize": 17.5,
+        }
+      }
+    >
+      This is my first note
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`NoteCard component should render properly with defualt color if color not found 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 10,
+        "elevation": 4,
+        "flex": 1,
+        "justifyContent": "center",
+        "margin": 10,
+      },
+      Object {
+        "backgroundColor": "#f5fcff",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderTopLeftRadius": 10,
+        "borderTopRightRadius": 10,
+        "elevation": 2,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 50,
+        "justifyContent": "center",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#517fa4",
+            "fontSize": 25,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Note Title
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "width": 60,
+        }
+      }
+    >
+      <Icon
+        color="#517fa4"
+        name="edit"
+        onPress={[MockFunction]}
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        type="materialicon"
+        underlayColor="white"
+      />
+      <Icon
+        color="#517fa4"
+        name="delete"
+        onPress={[MockFunction]}
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        type="materialicon"
+        underlayColor="white"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "minHeight": 50,
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#212121",
+          "fontSize": 17.5,
+        }
+      }
+    >
+      This is my first note
+    </Text>
+  </View>
+</View>
+`;

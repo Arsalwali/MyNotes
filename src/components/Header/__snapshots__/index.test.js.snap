@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render properly with right icon 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#ffffff",
+      "elevation": 5,
+      "flexDirection": "row",
+      "height": 60,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#517fa4",
+        "fontSize": 27.5,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    My Notes
+  </Text>
+  <View
+    style={
+      Object {
+        "marginRight": 10,
+        "position": "absolute",
+        "right": 0,
+      }
+    }
+  >
+    <Icon
+      color="#517fa4"
+      name="add"
+      raised={false}
+      reverse={false}
+      reverseColor="white"
+      size={28}
+      type="materialicon"
+      underlayColor="white"
+    />
+  </View>
+</View>
+`;
+
+exports[`Header component should render properly without right icon 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#ffffff",
+      "elevation": 5,
+      "flexDirection": "row",
+      "height": 60,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#517fa4",
+        "fontSize": 27.5,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    My Notes
+  </Text>
+</View>
+`;

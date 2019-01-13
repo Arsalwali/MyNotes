@@ -1,0 +1,46 @@
+{
+  "name": "MyNotes",
+  "version": "5.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "fs-extra": "^6.0.1",
+    "jest": "22.4.3",
+    "react-dom": "^16.3.2",
+    "metro-react-native-babel-preset": "^0.51.1",
+    "react-test-renderer": "16.7.0",
+    "replace-in-file": "^3.4.2"
+  },
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios --simulator=\"iPhone X\"",
+    "apk": "cd android && ./gradlew assembleRelease",
+    "rename": "node ./bin/rename.js",
+    "start": "react-native start",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest/setup.js"
+    ],
+    "transform": { "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js" }
+  },
+  "dependencies": {
+    "deep-freeze": "^0.0.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "react": "16.6.3",
+    "react-native": "0.58.0-rc.2",
+    "react-native-color-palette": "^2.0.2",
+    "react-native-elements": "^0.19.1",
+    "react-native-firebase": "^5.2.0",
+    "react-native-vector-icons": "^6.1.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1"
+  }
+}

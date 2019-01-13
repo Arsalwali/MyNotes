@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Color picker component should render properly 1`] = `
+<ColorPalette
+  colors={
+    Array [
+      "#c0392b",
+      "#d81b60",
+      "#e74c3c",
+      "#5d7a90",
+      "#8e44ad",
+      "#2980b9",
+    ]
+  }
+  defaultColor={null}
+  icon={
+    <Text>
+      ✔
+    </Text>
+  }
+  onChange={[Function]}
+  paletteStyles={Object {}}
+  scaleToWindow={false}
+  title={null}
+  titleStyles={Object {}}
+  value="#ffffff"
+/>
+`;
+
+exports[`Color picker component should render properly with no color props 1`] = `
+<ColorPalette
+  colors={
+    Array [
+      "#c0392b",
+      "#d81b60",
+      "#e74c3c",
+      "#5d7a90",
+      "#8e44ad",
+      "#2980b9",
+    ]
+  }
+  defaultColor={null}
+  icon={
+    <Text>
+      ✔
+    </Text>
+  }
+  onChange={[Function]}
+  paletteStyles={Object {}}
+  scaleToWindow={false}
+  title={null}
+  titleStyles={Object {}}
+  value={null}
+/>
+`;
