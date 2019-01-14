@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux'; 
 import { hideModal, setColor } from './actionCreators';
-import firebase from 'react-native-firebase';
+import { addNote, editNote } from '../core/actionCreators/firebase';
 import { ColorPicker } from '../components';
 import { colors, metrics } from '../theme';
 
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   },
 });
 
-class NoteModal extends React.Component {
+export class NoteModal extends React.Component {
   static getDerivedStateFromProps(props, state) {
     if (props.documentKey !== state.documentKey) {
       return {
@@ -63,7 +63,6 @@ class NoteModal extends React.Component {
 
   constructor(props) {
     super(props);
-    this.ref = firebase.firestore().collection('notes');
     this.state = {
       documentKey: '',
       title: '',
@@ -80,20 +79,19 @@ class NoteModal extends React.Component {
 
   handlePress = () => {
     if(this.state.isAdd) {
-      this.ref.add({
+      this.props.addNote({
+        key: this.state.documentKey,
         title: this.state.title,
         note: this.state.note,
         color: this.props.color,
-      }).then(() => console.log('add success'))
-      .catch((error) => console.log('add error', error));
-      this.setState({ title: '', note: '' });
+      });
     } else {
-      this.ref.doc(this.state.documentKey).update({
+      this.props.editNote({
+        key: this.state.documentKey,
         title: this.state.title,
         note: this.state.note,
         color: this.props.color,
-      }).then(() => console.log('edit success'))
-      .catch((error) => console.log('edit error', error));
+      });
     }
     this.props.hideModal();
   }
@@ -196,11 +194,11 @@ class NoteModal extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
+export const mapStateToProps = (state) => {
   const { key, title, note, color, isVisible } = state.modal;
   return { documentKey: key, title, note, color, isVisible };
 };
 
-const mapDispatchToProps = { hideModal, setColor };
+const mapDispatchToProps = { hideModal, setColor, addNote, editNote };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NoteModal);

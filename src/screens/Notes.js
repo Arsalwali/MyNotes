@@ -1,14 +1,15 @@
 import React from 'react';
-import { Text, View, Button, FlatList, StatusBar } from 'react-native';
+import { Text, View, Button, FlatList } from 'react-native';
 import NoteModal from './NoteModal';
 import firebase from 'react-native-firebase';
 import { connect } from 'react-redux';
 import { showModal } from './actionCreators';
+import { deleteNote } from '../core/actionCreators/firebase';
 import NoteCard from './NoteCard';
 import { Header } from '../components';
 import { colors, iconNames } from '../theme';
 
-class Notes extends React.Component {
+export class Notes extends React.Component {
   constructor(props) {
     super(props);
     this.ref = firebase.firestore().collection('notes');
@@ -53,7 +54,7 @@ class Notes extends React.Component {
   }
 
   onDeletePress = (key) => () => {
-    this.ref.doc(key).delete();
+    this.props.deleteNote({ key });
   }
 
   keyExtractor = (item) => item.key;
@@ -69,7 +70,6 @@ class Notes extends React.Component {
 	render() {
 		return (
       <View style={{ flex: 1, backgroundColor: colors.backgroundColor }}>
-        <StatusBar hidden={false}/>
         <NoteModal />
         <Header title="My Notes" rightIcon={iconNames.add} onIconPress={this.onAddPress} />
         <FlatList
@@ -87,6 +87,6 @@ const mapStateToProps = (state) => {
   return null;
 };
 
-const mapDispatchToProps = { showModal };
+const mapDispatchToProps = { showModal, deleteNote };
 
 export default connect(null, mapDispatchToProps)(Notes);
