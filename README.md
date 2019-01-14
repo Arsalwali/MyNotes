@@ -21,6 +21,11 @@
 
 #### 3) Start your app
 - 3.1) Three options are available. Add Note, Edit Note & Delete Note.
+
+#### 4) Unit test
+- 4.1) `yarn test` to run all tests.
+- 4.2) `yarn test --coverage` to generate the jest coverage report. (Coverage report also avaiable in root/coverage/Icov-report/index.html).
+
  
 ## Screenshots
 ![Screenshot 1](https://github.com/Arsalwali/MyNotes/blob/master/screenshots/MyNotes1.PNG)
