@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/components/ColorPicker/index.js</title>
+    <title>Code coverage report for src/core/actionCreators/firebase.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\..\base.css" />
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/components/ColorPicker</a> index.js
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/core/actionCreators</a> firebase.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>24/24</span>
+        <span class='fraction'>12/12</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>10/10</span>
+        <span class='fraction'>7/7</span>
       </div>
     </div>
   </div>
@@ -62,83 +62,44 @@
 17
 18
 19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33</td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+20</td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import { Text } from 'react-native';
-import ColorPalette from 'react-native-color-palette';
-import { colors } from '../../theme';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ADD_NOTE, EDIT_NOTE, DELETE_NOTE } from '../actionTypes/firebase';
 &nbsp;
-class ControlledColorPicker extends React.Component {
-  componentDidMount() {
-    if(!this.props.color &amp;&amp; this.props.setColor) {
-      this.props.setColor(colors.colorPickerArray[0]);
-    }
-  }
-  
-  // onColorChange = (color) =&gt; {
-  //   if (this.props.setColor) {
-  //     this.props.setColor(color);
-  //   }
-  // }
-  
-  render() {
-    return (
-      &lt;ColorPalette
-        onChange={this.props.onColorChange}
-        value={this.props.color}
-        colors={colors.colorPickerArray}
-        title={null}
-        icon={&lt;Text&gt;✔&lt;/Text&gt;}
-      /&gt;
-    );
-  }
-};
+export const addNote = (payload) =&gt; ({
+  type: ADD_NOTE,
+  payload,
+});
 &nbsp;
-export default ControlledColorPicker;
+export const editNote = (payload) =&gt; ({
+  type: EDIT_NOTE,
+  payload,
+});
+&nbsp;
+export const deleteNote = (payload) =&gt; ({
+  type: DELETE_NOTE,
+  payload,
+});
+&nbsp;
+&nbsp;
+&nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
