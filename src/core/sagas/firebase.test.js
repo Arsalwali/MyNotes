@@ -1,14 +1,6 @@
 import { select, takeEvery, take, fork, cancel, cancelled } from 'redux-saga/effects';
 import { firebaseSaga, callFirestore } from "./firebase";
 import { ADD_NOTE, EDIT_NOTE, DELETE_NOTE } from '../actionTypes/firebase';
-// import firebase from 'react-native-firebase';
-
-
-// jest.mock('react-native-firebase');
-// beforeEach(() => {
-//   jest.resetAllMocks();
-// });
-
 
 describe('firebaseSaga', () => {
   it('should work', () => {

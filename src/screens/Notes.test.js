@@ -23,12 +23,6 @@ const props = {
   deleteNote: jest.fn(),
 };
 
-
-beforeEach(() => {
- 
-  // const firestore = firebase.firestore = jest.fn();
-});
-
 describe('Notes screen', () => {
   it('should render properly', () => {
     const wrapper = shallow(<Notes {...props} />);
