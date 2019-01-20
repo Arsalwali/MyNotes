@@ -1,104 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1547497641478" clover="3.2.0">
-  <project timestamp="1547497641479" name="All files">
-    <metrics statements="125" coveredstatements="125" conditionals="34" coveredconditionals="33" methods="31" coveredmethods="30" elements="190" coveredelements="188" complexity="0" loc="125" ncloc="125" packages="8" files="12" classes="12">
+<coverage generated="1548004899353" clover="3.2.0">
+  <project timestamp="1548004899354" name="All files">
+    <metrics statements="178" coveredstatements="172" conditionals="46" coveredconditionals="43" methods="55" coveredmethods="48" elements="279" coveredelements="263" complexity="0" loc="178" ncloc="178" packages="9" files="14" classes="14">
       <package name="jest">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="setup.js" path="D:\Arsalwali\Development\ReactNative\myNotes\jest\setup.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="7" type="stmt"/>
-          <line num="2" count="7" type="stmt"/>
-          <line num="4" count="7" type="stmt"/>
+          <line num="1" count="9" type="stmt"/>
+          <line num="2" count="9" type="stmt"/>
+          <line num="4" count="9" type="stmt"/>
         </file>
       </package>
       <package name="src.components">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <file name="index.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\components\index.js">
-          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="1" count="20" type="stmt"/>
-          <line num="2" count="1" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
         </file>
       </package>
       <package name="src.components.ColorPicker">
         <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
         <file name="index.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\components\ColorPicker\index.js">
           <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
-          <line num="1" count="2" type="stmt"/>
-          <line num="2" count="2" type="stmt"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="4" count="2" type="stmt"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
           <line num="6" count="3" type="stmt"/>
           <line num="8" count="3" type="cond" truecount="4" falsecount="0"/>
           <line num="9" count="2" type="stmt"/>
           <line num="20" count="3" type="stmt"/>
-          <line num="29" count="2" type="stmt"/>
-          <line num="32" count="2" type="stmt"/>
+          <line num="29" count="3" type="stmt"/>
+          <line num="32" count="3" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Header">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <file name="index.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\components\Header\index.js">
           <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-          <line num="1" count="2" type="stmt"/>
-          <line num="2" count="2" type="stmt"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="4" count="2" type="stmt"/>
-          <line num="6" count="2" type="stmt"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="6" count="3" type="stmt"/>
           <line num="29" count="2" type="stmt"/>
-          <line num="47" count="2" type="stmt"/>
+          <line num="47" count="3" type="stmt"/>
         </file>
       </package>
       <package name="src.core.actionCreators">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <file name="firebase.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\core\actionCreators\firebase.js">
           <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-          <line num="1" count="2" type="stmt"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="5" count="2" type="stmt"/>
-          <line num="8" count="2" type="stmt"/>
-          <line num="10" count="2" type="stmt"/>
-          <line num="13" count="2" type="stmt"/>
-          <line num="15" count="2" type="stmt"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="8" count="3" type="stmt"/>
+          <line num="10" count="3" type="stmt"/>
+          <line num="13" count="3" type="stmt"/>
+          <line num="15" count="3" type="stmt"/>
         </file>
       </package>
       <package name="src.core.actionTypes">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="firebase.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\core\actionTypes\firebase.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="2" type="stmt"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="4" count="2" type="stmt"/>
-          <line num="5" count="2" type="stmt"/>
+          <line num="1" count="4" type="stmt"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="4" count="4" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
         </file>
       </package>
-      <package name="src.screens">
-        <metrics statements="83" coveredstatements="83" conditionals="28" coveredconditionals="27" methods="21" coveredmethods="21"/>
-        <file name="NoteCard.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\screens\NoteCard.js">
-          <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <package name="src.core.sagas">
+        <metrics statements="18" coveredstatements="12" conditionals="12" coveredconditionals="10" methods="10" coveredmethods="4"/>
+        <file name="firebase.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\core\sagas\firebase.js">
+          <metrics statements="18" coveredstatements="12" conditionals="12" coveredconditionals="10" methods="10" coveredmethods="4"/>
           <line num="1" count="1" type="stmt"/>
           <line num="2" count="1" type="stmt"/>
           <line num="3" count="1" type="stmt"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="6" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="10" count="4" type="cond" truecount="4" falsecount="2"/>
+          <line num="12" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+          <line num="19" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="26" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="27" count="1" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="30" count="4" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.screens">
+        <metrics statements="118" coveredstatements="118" conditionals="28" coveredconditionals="27" methods="35" coveredmethods="34"/>
+        <file name="NoteCard.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\screens\NoteCard.js">
+          <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
           <line num="50" count="2" type="stmt"/>
           <line num="51" count="2" type="stmt"/>
           <line num="52" count="10" type="stmt"/>
           <line num="53" count="2" type="cond" truecount="2" falsecount="0"/>
           <line num="54" count="2" type="stmt"/>
           <line num="59" count="2" type="stmt"/>
-          <line num="89" count="1" type="stmt"/>
+          <line num="89" count="2" type="stmt"/>
         </file>
         <file name="NoteModal.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\screens\NoteModal.js">
           <metrics statements="52" coveredstatements="52" conditionals="16" coveredconditionals="16" methods="14" coveredmethods="14"/>
-          <line num="1" count="1" type="stmt"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="11" count="1" type="stmt"/>
-          <line num="12" count="1" type="stmt"/>
-          <line num="13" count="1" type="stmt"/>
-          <line num="14" count="1" type="stmt"/>
-          <line num="15" count="1" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
-          <line num="49" count="1" type="stmt"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="15" count="2" type="stmt"/>
+          <line num="17" count="2" type="stmt"/>
+          <line num="49" count="2" type="stmt"/>
           <line num="51" count="23" type="cond" truecount="2" falsecount="0"/>
           <line num="52" count="17" type="stmt"/>
           <line num="61" count="6" type="stmt"/>
@@ -135,28 +159,66 @@
           <line num="170" count="20" type="stmt"/>
           <line num="173" count="14" type="stmt"/>
           <line num="178" count="20" type="stmt"/>
-          <line num="194" count="1" type="stmt"/>
-          <line num="197" count="1" type="stmt"/>
+          <line num="194" count="2" type="stmt"/>
+          <line num="197" count="2" type="stmt"/>
           <line num="198" count="1" type="stmt"/>
           <line num="199" count="1" type="stmt"/>
-          <line num="200" count="1" type="stmt"/>
-          <line num="202" count="1" type="stmt"/>
-          <line num="204" count="1" type="stmt"/>
+          <line num="200" count="2" type="stmt"/>
+          <line num="202" count="2" type="stmt"/>
+          <line num="204" count="2" type="stmt"/>
+        </file>
+        <file name="Notes.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\screens\Notes.js">
+          <metrics statements="35" coveredstatements="35" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="13"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="8" type="stmt"/>
+          <line num="14" count="8" type="stmt"/>
+          <line num="28" count="8" type="stmt"/>
+          <line num="32" count="1" type="stmt"/>
+          <line num="33" count="1" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
+          <line num="35" count="1" type="stmt"/>
+          <line num="43" count="1" type="stmt"/>
+          <line num="44" count="8" type="stmt"/>
+          <line num="47" count="1" type="stmt"/>
+          <line num="48" count="8" type="stmt"/>
+          <line num="50" count="2" type="stmt"/>
+          <line num="51" count="1" type="stmt"/>
+          <line num="52" count="8" type="stmt"/>
+          <line num="54" count="2" type="stmt"/>
+          <line num="55" count="1" type="stmt"/>
+          <line num="56" count="8" type="stmt"/>
+          <line num="58" count="8" type="stmt"/>
+          <line num="60" count="1" type="stmt"/>
+          <line num="64" count="8" type="stmt"/>
+          <line num="69" count="10" type="stmt"/>
+          <line num="80" count="1" type="stmt"/>
+          <line num="83" count="1" type="stmt"/>
+          <line num="85" count="1" type="stmt"/>
         </file>
         <file name="actionCreators.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\screens\actionCreators.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-          <line num="1" count="2" type="stmt"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="9" count="2" type="stmt"/>
-          <line num="12" count="2" type="stmt"/>
-          <line num="13" count="2" type="stmt"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="9" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="13" count="3" type="stmt"/>
         </file>
         <file name="actionTypes.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\screens\actionTypes.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="3" type="stmt"/>
-          <line num="3" count="3" type="stmt"/>
-          <line num="4" count="3" type="stmt"/>
-          <line num="5" count="3" type="stmt"/>
+          <line num="1" count="4" type="stmt"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="4" count="4" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
         </file>
         <file name="reducers.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\screens\reducers.js">
           <metrics statements="10" coveredstatements="10" conditionals="10" coveredconditionals="9" methods="1" coveredmethods="1"/>
@@ -176,15 +238,15 @@
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="index.js" path="D:\Arsalwali\Development\ReactNative\myNotes\src\theme\index.js">
           <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="4" type="stmt"/>
-          <line num="3" count="4" type="stmt"/>
-          <line num="15" count="4" type="stmt"/>
-          <line num="18" count="4" type="stmt"/>
-          <line num="22" count="4" type="stmt"/>
-          <line num="25" count="4" type="stmt"/>
-          <line num="26" count="4" type="stmt"/>
-          <line num="29" count="4" type="stmt"/>
-          <line num="32" count="4" type="stmt"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="15" count="5" type="stmt"/>
+          <line num="18" count="5" type="stmt"/>
+          <line num="22" count="5" type="stmt"/>
+          <line num="25" count="5" type="stmt"/>
+          <line num="26" count="5" type="stmt"/>
+          <line num="29" count="5" type="stmt"/>
+          <line num="32" count="5" type="stmt"/>
         </file>
       </package>
     </metrics>
