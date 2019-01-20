@@ -8,7 +8,6 @@ export function* firebaseSaga() {
 }
 
 export function* callFirestore(refs, action) {
-  console.log('callFirestore', action);
   const { key, title, note, color } = action.payload;
   if (action.type === ADD_NOTE) {
     refs.add({

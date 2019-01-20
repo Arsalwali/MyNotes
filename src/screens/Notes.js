@@ -32,10 +32,8 @@ export class Notes extends React.Component {
     const notes = [];
     querySnapshot.forEach((doc) => {
       const { title, note, color } = doc.data();
-  
       notes.push({
         key: doc.id,
-        doc, // DocumentSnapshot
         title,
         note,
         color,
@@ -81,11 +79,6 @@ export class Notes extends React.Component {
 		);
 	}
 }
-
-
-const mapStateToProps = (state) => {
-  return null;
-};
 
 const mapDispatchToProps = { showModal, deleteNote };
 

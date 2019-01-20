@@ -6,6 +6,7 @@ const collection = jest.fn(() => {
       return {
         collection: collection,
         update: jest.fn(() => Promise.resolve(true)),
+        delete: jest.fn(() => Promise.resolve(true)),
         onSnapshot: jest.fn(() => Promise.resolve(true)),
         get: jest.fn(() => Promise.resolve(true))
       }
@@ -15,7 +16,9 @@ const collection = jest.fn(() => {
         get: jest.fn(() => Promise.resolve(true)),
         onSnapshot: jest.fn(() => Promise.resolve(true)),
       }
-    })
+    }),
+    add: jest.fn(() => Promise.resolve(true)),
+    onSnapshot: jest.fn(() => Promise.resolve(true)),
   }
 });
 

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notes screen renderItem() should render one item properly 1`] = `
+<NoteCard
+  data={
+    Object {
+      "color": "#454545",
+      "key": "123",
+      "note": "Note",
+      "title": "First",
+    }
+  }
+  onDeletePress={[Function]}
+  onEditPress={[Function]}
+/>
+`;
+
+exports[`Notes screen should render properly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#dce2e5",
+      "flex": 1,
+    }
+  }
+>
+  <Connect(NoteModal) />
+  <Header
+    onIconPress={[Function]}
+    rightIcon="add"
+    title="My Notes"
+  />
+  <FlatList
+    data={Array []}
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
+
+exports[`Notes screen should render properly with notes 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#dce2e5",
+      "flex": 1,
+    }
+  }
+>
+  <Connect(NoteModal) />
+  <Header
+    onIconPress={[Function]}
+    rightIcon="add"
+    title="My Notes"
+  />
+  <FlatList
+    data={
+      Array [
+        Object {
+          "color": "#606060",
+          "key": "123",
+          "note": "Note",
+          "title": "First",
+        },
+        Object {
+          "color": "#60F060",
+          "key": "1234",
+          "note": "Note",
+          "title": "Seccond",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;
